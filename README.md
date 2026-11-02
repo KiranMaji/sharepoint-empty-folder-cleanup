@@ -1,5 +1,7 @@
 **SharePoint Empty Folder Cleanup**
 
+[Full article] (https://fixr.cloud/delete-empty-folders-sharepoint-graph-powershell/)
+
 **Safely identify and remove empty folders in SharePoint Online using Microsoft Graph PowerShell.**
 
 This repository contains a two-step PowerShell solution to scan a specified SharePoint scope, identify empty folders—including nested child folders—and generate a report for review before deletion.
@@ -79,6 +81,10 @@ Before running the deletion script:
 After validating the report, run the deletion script:
 
 .\scripts\Remove-EmptySharePointFolders.ps1
+
+Note: Make sure update the exported scan report file name in the deletion script. Then It will revalidate and run in "DRY Mode" to double check the deletion directories/folders. However, this is optional you can skip it by executing below script directly, it will start delete the empty directories as per the scanned csv report.
+
+.\scripts\Remove-EmptySharePointFolders.ps1 -ExecuteDeletion
 
 The deletion script processes the folders listed in the scan report.
 
