@@ -100,10 +100,10 @@ After validating the report, run the deletion script:
 The deletion script processes the folders listed in the scan report.
 </br>
 Update the script parameters or configuration as required for your environment.
-</br></br>
+</br></br></br>
 
 ⚠️ **Important Safety Considerations**
-</br></br>
+</br>
 
 **The scan report represents a snapshot of the folder state at the time of scanning.**
 </br>
@@ -119,10 +119,11 @@ To reduce the risk of unintended deletion:
 </br>
 Deleted SharePoint content may be recoverable through the SharePoint recycle bin, subject to applicable retention and recovery conditions. Do not rely on recycle bin recovery as a replacement for validating the deletion scope.
 </br></br>
+
 **Recommended Execution Approach**
 </br>
 For large SharePoint environments:
-
+</br>
 - Process one document library or directory scope at a time.
 - Avoid running multiple cleanup operations against the same scope concurrently.
 - Monitor execution and review the output.
